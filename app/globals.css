@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 .nav-item {
-  @apply relative inline-block me-5 after:content-[''] after:absolute after:block after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:rounded-lg after:bg-green-500 after:mt-4 after:hover:w-2/3 after:transition-all after:duration-300
+  @apply relative inline-block me-8 font-medium after:content-[''] after:absolute after:block after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:rounded-lg after:bg-green-500 after:mt-4 after:hover:w-2/3 after:transition-all after:duration-300
+}
+
+.active {
+  @apply text-green-600
+}
+
+.swiper-pagination-bullet {
+  @apply !w-2 !h-2 !bg-slate-300 !opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply border-2 border-green-500 !bg-opacity-0;
 }

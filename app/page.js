@@ -1,8 +1,14 @@
-import Header from "./components/header";
+import Carousel from "./components/carousel";
+import Counter from "./components/counter";
+
+
 
 
 export default function Home() {
   return (
-    <Header />
+    <>
+      <Carousel />
+      <Counter />
+    </>
   );
 }

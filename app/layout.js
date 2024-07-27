@@ -1,8 +1,8 @@
 import Navbar from "./components/navbar";
 import "./globals.css";
-import { Playfair } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const playfair = Playfair({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
 
 export const metadata = {
@@ -13,11 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={playfair.className}>
+      <body className={poppins.className}>
         <Navbar />
-        <div className="container">
           {children}
-        </div>
       </body>
     </html>
   );

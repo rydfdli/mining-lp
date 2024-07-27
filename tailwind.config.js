@@ -16,9 +16,6 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-      },
     },
   },
   plugins: [],
