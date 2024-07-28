@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Header from "./motion";
 import Motions from "./motion";
+import Hero from "./items/hero";
 
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,54 +37,13 @@ export default function Carousel() {
       onSlideChange={handleSlideChange}
     >
       <SwiperSlide>
-        <Image
-          src="/Carousel-1.png"
-          alt="logo"
-          width={5000}
-          height={500}
-          className="w-full h-[500px] object-cover"
-        />
-        <div className="absolute top-1/2 left-1/2 container transform -translate-x-1/2 -translate-y-1/2">
-          {
-            activeIndex === 0 && (
-              <>
-                <Motions />
-              </>
-            )
-          }
-        </div>
+        <Hero activeIndex={activeIndex} number={0} caption={"Pasokan energi yang andal"} text={"Memberikan batu bara berkualitas tinggi untuk kebutuhan industri global."} image={"/Carousel-1.png"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src="/Carousel-1.png"
-          alt="logo"
-          width={5000}
-          height={500}
-          className="w-full h-[500px] object-cover"
-        />
-        <div className="absolute top-1/2 left-1/2 container transform -translate-x-1/2 -translate-y-1/2">
-          {activeIndex === 1 && (
-            <>
-              <Motions />
-            </>
-          )}
-        </div>
+        <Hero activeIndex={activeIndex} number={1} caption={"Pengalaman lebih dari 15 tahun di industri"} text={"Kami memprioritaskan keberlanjutan, keselamatan kerja, serta kesejahteraan komunitas sekitar tambang kami."} image={"/Carousel-2.jpg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src="/Carousel-1.png"
-          alt="logo"
-          width={5000}
-          height={500}
-          className="w-full h-[500px] object-cover"
-        />
-        <div className="absolute top-1/2 left-1/2 container transform -translate-x-1/2 -translate-y-1/2">
-          {activeIndex === 2 && (
-            <>
-              <Motions />
-            </>
-          )}
-        </div>
+        <Hero activeIndex={activeIndex} number={2} caption={"Teknologi canggih dan tim yang terlatih"} text={"Bergabunglah dengan kami dalam membangun masa depan energi yang berkelanjutan"} image={"/Carousel-3.jpg"}/>
       </SwiperSlide>
     </Swiper>
   );

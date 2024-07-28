@@ -12,6 +12,19 @@ export default function Navbar() {
           <Image src="/logo.png" alt="logo" width={338} height={72} />
         </div>
 
+        <div className="block lg:hidden">
+          <button className="navbar-burger flex items-center p-3">
+            <svg
+              className="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+
         <ul className="hidden space-x-8 lg:flex text-base">
           <li>
             <Link className="nav-item active font-medium" href="/">Beranda</Link>
@@ -22,7 +35,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <ul>
+        <ul className="hidden space-x-8 lg:flex">
           <li>
             <Link className="nav-item" href="/">IDN</Link>
             <Link className="nav-item text-gray-400" href="/">ENG</Link>

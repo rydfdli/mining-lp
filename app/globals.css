@@ -11,7 +11,7 @@
 }
 
 .swiper-pagination-bullet {
-  @apply !w-2 !h-2 !bg-slate-300 !opacity-100;
+  @apply !w-2 !h-2 !bg-slate-300 !opacity-100 !z-50;
 }
 
 .swiper-pagination-bullet-active {
