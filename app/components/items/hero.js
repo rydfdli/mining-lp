@@ -22,11 +22,11 @@ const formatCaption = (caption) => {
 export default function Hero({ activeIndex, number, caption, text, image }) {
   const formattedCaption = formatCaption(caption);
   return (
-    <div className="relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-r after:from-black after:to-transparent">
+    <div className="relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70">
       <Image
         src={image}
         alt="logo"
-        width={5000}
+        width={4000}
         height={550}
         className="w-full h-[550px] object-cover"
       />
@@ -43,7 +43,7 @@ export default function Hero({ activeIndex, number, caption, text, image }) {
             </motion.h1>
 
             <motion.p
-              className={`text-sm md:text-lg text-gray-400 max-w-[700px] line-clamp-3`}
+              className={`text-sm md:text-lg text-gray-200 max-w-[700px] line-clamp-3`}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.75, ease: "easeInOut" }}
