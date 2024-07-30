@@ -6,30 +6,26 @@ import Image from "next/image";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 
 const formatCaption = (caption) => {
-    const words = caption.split(" ");
-    const formattedWords = words.map((word, index) => {
-        if (index === words.length - 1) {
-            return `<span class="text-green-500">${word}</span>`;
-        } else if ((index + 1) % 3 === 0) {
-            return `${word}<br/>`;
-        } else {
-            return word;
-        }
-    });
-    return formattedWords.join(" ");
-}
+  const words = caption.split(" ");
+  const formattedWords = words.map((word, index) => {
+    if (index === words.length - 1) {
+      return `<span class="text-green-500">${word}</span>`;
+    } else if ((index + 1) % 3 === 0) {
+      return `${word}<br/>`;
+    } else {
+      return word;
+    }
+  });
+  return formattedWords.join(" ");
+};
 
 export default function Hero({ activeIndex, number, caption, text, image }) {
   const formattedCaption = formatCaption(caption);
   return (
     <div className="relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70">
-      <Image
-        src={image}
-        alt="logo"
-        width={4000}
-        height={550}
-        className="w-full h-[550px] object-cover"
-      />
+      <div className="relative w-full h-[550px]">
+        <Image src={image} alt="logo" layout="fill" objectFit="cover" />
+      </div>
       <div className="absolute top-1/2 left-1/2 container transform -translate-x-1/2 -translate-y-1/2 z-50">
         {activeIndex === number && (
           <>
@@ -39,8 +35,7 @@ export default function Hero({ activeIndex, number, caption, text, image }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, ease: "easeInOut" }}
               dangerouslySetInnerHTML={{ __html: formattedCaption }}
-            >
-            </motion.h1>
+            ></motion.h1>
 
             <motion.p
               className={`text-sm md:text-lg text-gray-200 max-w-[700px] line-clamp-3`}

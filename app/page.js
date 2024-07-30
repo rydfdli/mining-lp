@@ -1,9 +1,7 @@
 import About from "./components/about";
 import Carousel from "./components/carousel";
+import Contact from "./components/contact";
 import Counter from "./components/counter";
-
-
-
 
 export default function Home() {
   return (
@@ -11,6 +9,7 @@ export default function Home() {
       <Carousel />
       <Counter />
       <About />
+      <Contact />
     </>
   );
 }
