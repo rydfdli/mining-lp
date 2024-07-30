@@ -11,7 +11,7 @@ const Stats = ({number, persentage = '', text}) => {
       count,
       number,
       {
-        duration: 3,
+        duration: 2,
       }
     )
   }, [])
