@@ -21,7 +21,7 @@ const Stats = ({number, persentage = '', text}) => {
   return (
     <div className="md:w-1/4 w-full md:text-start text-center text-sm md:text-md mb-7 md:mb-0">
       <div className='flex gap-2'>
-      <motion.h1 className="text-7xl md:mb-5 mb-2 text-center">
+      <motion.h1 className="text-7xl md:mb-5 mb-2 text-center mx-auto">
         {rounded}
       </motion.h1>
       <span className='text-3xl'>{persentage}</span>
