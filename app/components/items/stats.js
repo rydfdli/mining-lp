@@ -6,6 +6,7 @@ const Stats = ({number, persentage = '', text}) => {
 
   const count = useMotionValue(0)
   const rounded = useTransform(count, Math.round)
+  const type = persentage
 
   useEffect(() =>{
     const animation = animate(
@@ -22,7 +23,7 @@ const Stats = ({number, persentage = '', text}) => {
     <div className="md:w-1/4 w-full md:text-start text-center text-sm md:text-md mb-7 md:mb-0">
 
       <motion.h1 className="text-7xl md:mb-5 mb-2 text-center mx-auto">
-        {rounded}
+        {rounded} {type}
       </motion.h1>
       <p className='text-3xl'>{
         persentage
