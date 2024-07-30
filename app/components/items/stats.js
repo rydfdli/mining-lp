@@ -24,9 +24,7 @@ const Stats = ({number, persentage = '', text}) => {
       <motion.h1 className="text-7xl md:mb-5 mb-2 text-center mx-auto">
         {rounded}
       </motion.h1>
-      <p className='text-3xl'>{
-        persentage
-      }</p>
+    
       
       <p className="max-w-[200px] mx-auto">{text}</p>
     </div>
