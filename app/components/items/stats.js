@@ -12,7 +12,7 @@ const Stats = ({ number, persentage = '', text }) => {
     })
 
     useEffect(() => {
-        const animation = animate(count, number, { duration: 2 })
+        const animation = animate(count, number, { duration: 3 })
         return () => animation.stop()
     }, [number])
 
