@@ -22,9 +22,9 @@ const Stats = ({number, persentage = '', text}) => {
     <div className="md:w-1/4 w-full md:text-start text-center text-sm md:text-md mb-7 md:mb-0">
       <motion.h1 className="text-7xl md:mb-5 mb-2">
         {rounded}
-        {persentage}
       </motion.h1>
-      <p className="max-w-[200px] mx-auto">{text}</p>
+      <p>{persentage}</p>
+            <p className="max-w-[200px] mx-auto">{text}</p>
     </div>
   );
 }
