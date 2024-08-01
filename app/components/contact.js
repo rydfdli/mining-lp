@@ -4,6 +4,7 @@ import { Playfair_Display } from "next/font/google";
 
 import Image from "next/image";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import MapComponent from "./items/map";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 
@@ -12,7 +13,7 @@ export default function Contact() {
     <ParallaxProvider>
       <div className="relative w-full md:h-[700px] h-[1000px] overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70">
         <Parallax
-          speed={-5}
+          speed={-10}
           tag="figure"
           className="w-full md:h-[700px] h-[1000px] overflow-hidden"
         >
@@ -26,11 +27,11 @@ export default function Contact() {
           </h1>
           <p>Mitra Terpercaya Anda dalam Industri Tambang Batu Bara</p>
           <div className="w-full mt-11 grid md:grid-cols-2 grid-cols-1 gap-8">
-            <div className="bg-white rounded-md text-start py-9 px-14">
+            <div className="bg-white rounded-md text-start lg:py-9 lg:px-14 py-5 px-8">
               <h3 className="text-md text-green-500 font-semibold mb-5">
                 Contact Info
               </h3>
-              <div className="text-gray-900">
+              <div className="text-gray-900 text-sm lg:text-md">
                 <ul className="mb-4">
                   <li className="font-semibold">Our Location</li>
                   <li>
@@ -62,8 +63,8 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-            <div className="bg-green-500">
-              <h1>Hello</h1>
+            <div className="bg-green-500 max-h-72 rounded-md">
+              <MapComponent />
             </div>
           </div>
         </div>
