@@ -11,13 +11,13 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 export default function Contact() {
   return (
     <ParallaxProvider>
-      <div className="relative w-full md:h-[700px] h-[1000px] overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70">
+      <div className="relative w-full md:h-[700px] h-[1000px] overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70 mt-9">
         <Parallax
           speed={-10}
           tag="figure"
-          className="w-full md:h-[700px] h-[1000px] overflow-hidden"
+          className="w-full md:h-[700px] h-[1000px] overflow-hidden object-cover relative"
         >
-          <Image src="/Hero-bg.jpg" alt="bg" layout="fill" objectFit="cover" />
+          <Image src="/Hero-bg.jpg" alt="bg" fill />
         </Parallax>
         <div className="absolute container text-white top-20 left-1/2 transform -translate-x-1/2 text-center z-50">
           <h1
@@ -63,9 +63,9 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-            <div className="bg-green-500 max-h-72 rounded-md">
+            {/* <div className="bg-green-500 max-h-72 rounded-md">
               <MapComponent />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

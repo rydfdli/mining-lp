@@ -2,8 +2,6 @@
 import React from "react";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-import { motion } from "framer-motion";
 
 import { Poppins } from "next/font/google";
 
@@ -18,7 +16,7 @@ import Header from "./motion";
 import Motions from "./motion";
 import Hero from "./items/hero";
 
-export default function Carousel() {
+export default function Heroes() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const pagination = {

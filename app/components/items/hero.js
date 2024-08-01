@@ -24,7 +24,7 @@ export default function Hero({ activeIndex, number, caption, text, image }) {
   return (
     <div className="relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70">
       <div className="relative w-full h-[550px]">
-        <Image src={image} alt="logo" layout="fill" objectFit="cover" />
+        <Image src={image} alt="logo" fill className="object-cover"/>
       </div>
       <div className="absolute top-1/2 left-1/2 container transform -translate-x-1/2 -translate-y-1/2 z-50">
         {activeIndex === number && (

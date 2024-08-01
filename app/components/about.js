@@ -1,14 +1,13 @@
 import React from "react";
 import { Playfair_Display } from "next/font/google";
+import Header from "./items/header";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 
 export default function About() {
   return (
     <div className="container md:text-center text-pretty py-28">
-      <h1 className={`text-5xl ${playfair.className} mb-7`}>
-        Tentang <span className="text-green-600">Kami</span>
-      </h1>
+      <Header caption="Tentang Kami" />
       <p className="text-sm md:text-md text-gray-500">
         Kami adalah sebuah perusahaan tambang batu bara yang berdedikasi untuk
         menghadirkan solusi energi yang bertanggung jawab dan berkelanjutan.

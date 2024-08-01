@@ -17,3 +17,7 @@
 .swiper-pagination-bullet-active {
   @apply border-2 border-green-500 !bg-opacity-0;
 }
+
+.mySwiper{
+  @apply !px-0;
+}
