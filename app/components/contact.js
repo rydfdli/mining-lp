@@ -63,9 +63,9 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-            {/* <div className="bg-green-500 max-h-72 rounded-md">
+            <div className="bg-green-500 max-h-72 rounded-md">
               <MapComponent />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
