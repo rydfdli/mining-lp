@@ -13,7 +13,7 @@ function Blog({ image, title, link }) {
           className="object-cover rounded-md"
         />
       </div>
-      <Link href={link} className="font-semibold underline">
+      <Link href={link} className="font-semibold underline line-clamp-4">
         {title}
       </Link>
     </div>
