@@ -19,7 +19,7 @@ const services = [
         image: "/service/data-3.png",
     },
     {
-        title: "The Fallingwater House & Building & Interior",
+        title: "Environmental Monitoring",
         image: "/service/data-4.png",
     },
     {
@@ -51,7 +51,7 @@ const Services = () => {
           slidesPerView={2}
           freeMode={true}
           spaceBetween={30}
-          className="mySwiper"
+          className="mySwiper mb-16"
           breakpoints={{
             320: {
               slidesPerView: 1.5,
@@ -59,12 +59,12 @@ const Services = () => {
               freeMode: true,
             },
             640: {
-              slidesPerView: 1.5,
+              slidesPerView: 2.5,
               spaceBetween: 20,
             },
             1024: {
               slidesPerView: 3.5,
-              spaceBetween: 50,
+              spaceBetween: 20,
             },
           }}
         >

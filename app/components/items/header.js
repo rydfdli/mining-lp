@@ -5,11 +5,14 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 const formatCaption = (caption) => {
     const words = caption.split(" ");
     const formattedWords = words.map((word, index) => {
-      if (index === words.length - 1) {
-        return `<span class="text-green-500">${word}</span>`;
-      } else {
-        return word;
+      if(words.length > 1) {
+        if (index === words.length - 1) {
+          return `<span class="text-green-500">${word}</span>`;
+        } else {
+          return word;
+        }
       }
+      return word;
     });
     return formattedWords.join(" ");
   };
