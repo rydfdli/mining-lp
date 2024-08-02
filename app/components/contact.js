@@ -19,7 +19,7 @@ export default function Contact() {
         >
           <Image src="/Hero-bg.jpg" alt="bg" fill />
         </Parallax>
-        <div className="absolute container text-white top-20 left-1/2 transform -translate-x-1/2 text-center z-50">
+        <div className="absolute container text-white top-20 left-1/2 transform -translate-x-1/2 text-center z-30">
           <h1
             className={`text-5xl text-white font-semibold ${playfair.className} mb-2`}
           >
