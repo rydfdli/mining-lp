@@ -3,8 +3,6 @@ import Header from "./items/header";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import Image from "next/image";
-import Link from "next/link";
 import Blog from "./items/blog";
 
 const data = [
@@ -29,7 +27,7 @@ const data = [
 const Blogs = () => {
   return (
     <>
-      <div className="container mt-15">
+      <div className="container">
         <Header caption="Blogs" />
       </div>
       <div className="pl-8 md:container">

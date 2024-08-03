@@ -10,10 +10,10 @@ export default function Home() {
     <>
       <Heroes />
       <Counter />
-      <About />
+      <About style="py-28"/>
       <Services />
       <Blogs />
-      <Contact />
+      <Contact style="mt-28" />
     </>
   );
 }

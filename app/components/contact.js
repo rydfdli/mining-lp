@@ -8,10 +8,10 @@ import MapComponent from "./items/map";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 
-export default function Contact() {
+export default function Contact( { style = "" } ) {
   return (
     <ParallaxProvider>
-      <div className="relative w-full md:h-[700px] h-[1000px] overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70 mt-28">
+      <div className={`relative w-full md:h-[700px] h-[1000px] overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-70 ${style}`}>
         <Parallax
           speed={-10}
           tag="figure"

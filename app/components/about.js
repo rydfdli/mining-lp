@@ -4,9 +4,9 @@ import Header from "./items/header";
 
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400"] });
 
-export default function About() {
+export default function About({ style = "" }) {
   return (
-    <div className="container md:text-center text-pretty py-28">
+    <div className={`container md:text-center text-pretty ${style}`}>
       <Header caption="Tentang Kami" />
       <p className="text-sm md:text-md text-gray-500">
         Kami adalah sebuah perusahaan tambang batu bara yang berdedikasi untuk
